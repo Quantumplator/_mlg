@@ -1,0 +1,21 @@
+{
+  "name": "_mlg",
+  "version": "1.0.0",
+  "homepage": "https://github.com/quantumplator/_mlg",
+  "authors": [
+    "Dylan J Harris <dylansbook@gmail.com>"
+  ],
+  "description": "A custom WP Theme by Dylan J Harris",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "devDependencies": {
+    "font-awesome": "fontawesome#~4.4.0"
+  }
+}
