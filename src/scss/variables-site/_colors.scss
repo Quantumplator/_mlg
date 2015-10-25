@@ -12,7 +12,7 @@ $color__blue  : #044389; //rgba(4, 67, 137, 100)
 $color__grey  : #eaebed; //rgba(234, 235, 237, 100)
 
 $color__gold-light  : lighten(#f0ce79, 10%); //rgba(240, 206, 121, 100)
-$color__black-light : lighten(#050517, 10%); //rgba(5, 5, 23, 100)
+$color__black-light : lighten(#050517, 50%); //rgba(5, 5, 23, 100)
 $color__red-light   : lighten(#9e201d, 10%); //rgba(158, 32, 29, 100)
 $color__blue-light  : lighten(#044389, 10%); //rgba(4, 67, 137, 100)
 $color__grey-light  : lighten(#eaebed, 10%); //rgba(234, 235, 237, 100)
@@ -24,20 +24,20 @@ $color__blue-dark   : darken(#044389, 10%); //rgba(4, 67, 137, 100)
 $color__grey-dark   : darken(#eaebed, 10%); //rgba(234, 235, 237, 100)
 
 
-$color__background-body      : $color__grey;
-$color__background-screen    : #f1f1f1;
-$color__background-hr        : #ccc;
-$color__background-button    : $color__grey;
-$color__background-pre       : $color__grey-light;
-$color__background-ins       : #fff9c0;
-
 $color__text-screen          : #21759b;
 $color__text-input           : #666;
 $color__text-input-focus     : #111;
 $color__link                 : $color__blue-light;
 $color__link-visited         : $color__link;
 $color__link-hover           : $color__link;
-$color__text-main            : #404040;
+$color__text-main            : $color__black;
+
+$color__background-body      : $color__grey;
+$color__background-screen    : #f1f1f1;
+$color__background-hr        : $color__text-main;
+$color__background-button    : $color__grey;
+$color__background-pre       : $color__grey-light;
+$color__background-ins       : #fff9c0;
 
 $color__border-button        : #ccc #ccc #bbb;
 $color__border-button-hover  : #ccc #bbb #aaa;

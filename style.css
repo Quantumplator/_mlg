@@ -270,7 +270,7 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: #050517;
   font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -356,7 +356,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 }
 
 hr {
-  background-color: #ccc;
+  background-color: #050517;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;
