@@ -24,12 +24,11 @@ $color__blue-dark   : darken(#044389, 10%); //rgba(4, 67, 137, 100)
 $color__grey-dark   : darken(#eaebed, 10%); //rgba(234, 235, 237, 100)
 
 
-
 $color__background-body      : $color__grey;
 $color__background-screen    : #f1f1f1;
 $color__background-hr        : #ccc;
-$color__background-button    : #e6e6e6;
-$color__background-pre       : #eee;
+$color__background-button    : $color__grey;
+$color__background-pre       : $color__grey-light;
 $color__background-ins       : #fff9c0;
 
 $color__text-screen          : #21759b;
