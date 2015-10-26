@@ -8,6 +8,7 @@
 }
 
 .site-logo {
+  @include padding-top(1);
   display: block;
   max-width: 260px;
 }
@@ -18,9 +19,8 @@
   }
 }
 .site-description {
-  @include font-size(.75) {
-
-  }
+  @include font-size(.75);
+  font-weight: 400;
   text-align: center;
   color: $c__red;
   div {

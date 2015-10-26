@@ -24,6 +24,5 @@ body {
 }
 
 .site {
-  @include padding(1);
   background-color: $bg2;
 }

@@ -1,8 +1,10 @@
 .main-navigation {
+	@include padding(1);
 	clear: both;
 	display: block;
 	float: left;
 	width: 100%;
+	background: $bg1;
 
 	ul {
 		display: none;
