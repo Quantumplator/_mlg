@@ -3347,10 +3347,6 @@ a:hover, a:active {
   margin: 0;
 }
 
-.site-description {
-  float: right;
-}
-
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -3405,17 +3401,32 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
-.site-title {
+.site-title,
+.site-description {
   font-family: "Lora", serif;
 }
+
+.site-logo,
+.site-description {
+  margin: auto;
+}
+
+.site-logo {
+  display: block;
+  max-width: 260px;
+}
+
 .site-title a {
   color: #050517;
 }
 
-.logo {
-  display: block;
-  margin: auto;
-  max-width: 260px;
+.site-description {
+  text-align: center;
+  color: #9e201d;
+}
+.site-description span {
+  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 /*--------------------------------------------------------------

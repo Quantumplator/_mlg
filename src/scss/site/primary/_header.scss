@@ -1,13 +1,28 @@
-.site-title {
+.site-title,
+.site-description {
   font-family: $font__headings;
+}
+.site-logo,
+.site-description {
+  margin: auto;  
+}
+
+.site-logo {
+  display: block;
+  max-width: 260px;
+}
+
+.site-title {
   a {
     color: $c__text-main;
   }
 }
-
-.logo {
-  display: block;
-  margin: auto;
-  max-width: 260px;
-  // max-width: 100%;
+.site-description {
+  text-align: center;
+  color: $c__red;
+  span {
+    @include font-size(1.5);
+    &:nth-child(3) {}
+  }
 }
+
