@@ -19,9 +19,12 @@
 // 	width: $size__site-main;
 // }
 
-
+body {
+  @include padding(1);
+  background-color: $bg1;
+}
 
 .site {
   @include padding(1);
-  margin: 0;
+  background-color: $bg2;
 }

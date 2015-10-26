@@ -18,11 +18,16 @@
   }
 }
 .site-description {
+  @include font-size(.75) {
+
+  }
   text-align: center;
   color: $c__red;
+  div {
+    display: inline;
+  }
   span {
-    @include font-size(1.5);
-    &:nth-child(3) {}
+    @include font-size(1.025);
   }
 }
 

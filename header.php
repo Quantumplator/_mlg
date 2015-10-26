@@ -29,10 +29,10 @@
 			<img class="site-logo" src="wp-content/themes/_mlg/img/logo.png" title="Marchese Law Group" />
 			<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 <!-- 			<p class="site-description"><?php // bloginfo( 'description' ); ?></p> -->
-			<p class="site-description">
-				<div><span>C</span>ENTRAL<span>C</span>OAST</span></div>
-				<div><span>B</span>ANKRUPTCY<span>L</span>AWYERS</span></div>
-			</p>
+			<div class="site-description">
+				<div><span>C</span>ENTRAL<span> C</span>OAST</div>
+				<div><span>B</span>ANKRUPTCY<span> L</span>AWYERS</div>
+			</div>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
