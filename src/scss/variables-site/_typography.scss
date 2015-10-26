@@ -1,9 +1,15 @@
-$font__main: sans-serif;
+$font__main: 'Source Sans Pro', sans-serif;
+$font__headings: 'Lora', serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 
 
-// USE THIS
+// Sans-Serif Font: Source Sans Pro
+// Serif Font: Lora
+// Lora is a free, open-source serif typeface available from Google Fonts. 
+// The italics of Lora have a very calligraphic-feel to them and they look great rendered on screen. 
+// Lora is available in normal and bold with corresponding italics.
+
 // <link href='https://fonts.googleapis.com/css?family=Lora:400,700,700italic,400italic' rel='stylesheet' type='text/css'>

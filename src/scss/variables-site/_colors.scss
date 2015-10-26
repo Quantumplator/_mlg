@@ -3,50 +3,65 @@
 // $color2: #050517; //rgba(5, 5, 23, 100)
 // $color3: #9e201d; //rgba(158, 32, 29, 100)
 // $color4: #044389; //rgba(4, 67, 137, 100)
-// $color5: #eaebed; //rgba(234, 235, 237, 100)
+// $color5: #eaebed; //rgba(234, 235, 237, 100) 
 
-$color__gold  : #f0ce79; //rgba(240, 206, 121, 100)
-$color__black : #050517; //rgba(5, 5, 23, 100)
-$color__red   : #9e201d; //rgba(158, 32, 29, 100)
-$color__blue  : #044389; //rgba(4, 67, 137, 100)
-$color__grey  : #eaebed; //rgba(234, 235, 237, 100)
+$c__gold  : #f0ce79; //rgba(240, 206, 121, 100)
+$c__black : #050517; //rgba(5, 5, 23, 100)
+$c__red   : #9e201d; //rgba(158, 32, 29, 100)
+$c__blue  : #044389; //rgba(4, 67, 137, 100)
+$c__grey  : #eaebed; //rgba(234, 235, 237, 100)
 
-$color__gold-light  : lighten(#f0ce79, 10%); //rgba(240, 206, 121, 100)
-$color__black-light : lighten(#050517, 50%); //rgba(5, 5, 23, 100)
-$color__red-light   : lighten(#9e201d, 10%); //rgba(158, 32, 29, 100)
-$color__blue-light  : lighten(#044389, 10%); //rgba(4, 67, 137, 100)
-$color__grey-light  : lighten(#eaebed, 10%); //rgba(234, 235, 237, 100)
+$c__gold-light    : lighten(#f0ce79, 17%);
+$c__black-light   : lighten(#050517, 17%);
+$c__red-light     : lighten(#9e201d, 17%);
+$c__blue-light    : lighten(#044389, 17%);
+$c__grey-light    : lighten(#eaebed, 17%);
 
-$color__gold-dark   : darken(#f0ce79, 10%); //rgba(240, 206, 121, 100)
-$color__black-dark  : darken(#050517, 10%); //rgba(5, 5, 23, 100)
-$color__red-dark    : darken(#9e201d, 10%); //rgba(158, 32, 29, 100)
-$color__blue-dark   : darken(#044389, 10%); //rgba(4, 67, 137, 100)
-$color__grey-dark   : darken(#eaebed, 10%); //rgba(234, 235, 237, 100)
+$c__gold-lighter  : lighten(#f0ce79, 23%);
+$c__black-lighter : lighten(#050517, 23%);
+$c__red-lighter   : lighten(#9e201d, 23%);
+$c__blue-lighter  : lighten(#044389, 23%);
+$c__grey-lighter  : lighten(#eaebed, 23%);
 
-$sample1: lighten(#cf8d2e, 10%);
-$sample2: lighten(#cf8d2e, 20%);
+$c__gold-dark     : darken(#f0ce79, 17%);
+$c__black-dark    : darken(#050517, 17%);
+$c__red-dark      : darken(#9e201d, 17%);
+$c__blue-dark     : darken(#044389, 17%);
+$c__grey-dark     : darken(#eaebed, 17%);
 
-$color__text-screen          : #21759b;
-$color__text-input           : #666;
-$color__text-input-focus     : #111;
-$color__link                 : $color__blue-light;
-$color__link-visited         : $color__link;
-$color__link-hover           : $color__link;
-$color__text-main            : $color__black;
+$c__gold-darker   : darken(#f0ce79, 23%);
+$c__black-darker  : darken(#050517, 23%);
+$c__red-darker    : darken(#9e201d, 23%);
+$c__blue-darker   : darken(#044389, 23%);
+$c__grey-darker   : darken(#eaebed, 23%);
 
-$color__background-body      : $color__grey;
-$color__background-screen    : #f1f1f1;
-$color__background-hr        : $color__text-main;
-$color__background-button    : $color__grey;
-$color__background-pre       : $color__grey-light;
-$color__background-ins       : #fff9c0;
+// Dominant brown in corkboard
+$cork             : rgb(161, 100, 20);
+$cork-bright      : rgb(175, 107, 22);
+// Dominant yellow in sticky
+$yellow           : rgb(233, 230, 3);
+$bg1              : #e3ba80;
+$bg2              : #f5e8d4;
 
-$color__border-button        : #ccc #ccc #bbb;
-$color__border-button-hover  : #ccc #bbb #aaa;
-$color__border-button-focus  : #aaa #bbb #bbb;
-$color__border-input         : #ccc;
-$color__border-abbr          : #666;
 
-* {
-  background-color: $sample2;
-}
+$c__text-screen          : #21759b;
+$c__text-input           : $c__black-lighter;
+$c__text-input-focus     : #111;
+$c__link                 : $c__blue-light;
+$c__link-visited         : $c__link;
+$c__link-hover           : $c__link;
+$c__text-main            : $c__black;
+
+$c__background-body      : $c__grey;
+$c__background-screen    : #f1f1f1;
+$c__background-hr        : $c__text-main;
+$c__background-button    : $c__grey;
+$c__background-pre       : $c__grey-light;
+$c__background-ins       : #fff9c0;
+
+$c__border-button        : #ccc #ccc #bbb;
+$c__border-button-hover  : #ccc #bbb #aaa;
+$c__border-button-focus  : #aaa #bbb #bbb;
+$c__border-input         : #ccc;
+$c__border-abbr          : #666;
+

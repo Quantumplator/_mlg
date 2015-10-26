@@ -38,16 +38,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     ## Posts and pages
 	## Asides
 	## Comments
-# Infinite scroll
 # Media
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
 /* Coolors Exported Palette - coolors.co/f0ce79-050517-9e201d-044389-eaebed */
-* {
-  background-color: #e3ba80;
-}
-
 /*!
  *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2911,7 +2906,7 @@ input,
 select,
 textarea {
   color: #050517;
-  font-family: sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -2919,6 +2914,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
+  font-family: "Lora", serif;
 }
 
 p {
@@ -3083,9 +3079,10 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
+  color: #1a1a77;
   border: 1px solid #ccc;
   border-radius: 3px;
+  max-width: 100%;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -3116,14 +3113,14 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #055bbb;
+  color: #066cdd;
   text-decoration: none;
 }
 a:visited {
-  color: #055bbb;
+  color: #066cdd;
 }
 a:hover, a:focus, a:active {
-  color: #055bbb;
+  color: #066cdd;
   text-decoration: underline;
 }
 a:focus {
@@ -3222,7 +3219,7 @@ a:hover, a:active {
   display: inline-block;
   vertical-align: top;
   font-family: 'Fontawesome';
-  color: #055bbb;
+  color: #066cdd;
   -webkit-font-smoothing: antialiased;
   content: '\f0c0';
 }
@@ -3249,6 +3246,7 @@ a:hover, a:active {
   height: 1px;
   width: 1px;
   overflow: hidden;
+  right: 0;
 }
 .screen-reader-text:focus {
   background-color: #f1f1f1;
@@ -3341,6 +3339,19 @@ a:hover, a:active {
 # Content
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+## Site Layout
+--------------------------------------------------------------*/
+.site {
+  padding: 16px;
+  padding: 1rem;
+  margin: 0;
+}
+
+.site-description {
+  float: right;
+}
+
+/*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
 .sticky {
@@ -3392,18 +3403,19 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
-# Infinite scroll
+## Header
 --------------------------------------------------------------*/
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation,
-.infinite-scroll.neverending .site-footer {
-  /* Theme Footer (when set to scrolling) */
-  display: none;
+.site-title {
+  font-family: "Lora", serif;
+}
+.site-title a {
+  color: #050517;
 }
 
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-.infinity-end.neverending .site-footer {
+.logo {
   display: block;
+  margin: auto;
+  max-width: 260px;
 }
 
 /*--------------------------------------------------------------

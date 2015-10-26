@@ -1,0 +1,13 @@
+.site-title {
+  font-family: $font__headings;
+  a {
+    color: $c__text-main;
+  }
+}
+
+.logo {
+  display: block;
+  margin: auto;
+  max-width: 260px;
+  // max-width: 100%;
+}
