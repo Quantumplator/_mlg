@@ -23,6 +23,8 @@ $color__red-dark    : darken(#9e201d, 10%); //rgba(158, 32, 29, 100)
 $color__blue-dark   : darken(#044389, 10%); //rgba(4, 67, 137, 100)
 $color__grey-dark   : darken(#eaebed, 10%); //rgba(234, 235, 237, 100)
 
+$sample1: lighten(#cf8d2e, 10%);
+$sample2: lighten(#cf8d2e, 20%);
 
 $color__text-screen          : #21759b;
 $color__text-input           : #666;
@@ -44,3 +46,7 @@ $color__border-button-hover  : #ccc #bbb #aaa;
 $color__border-button-focus  : #aaa #bbb #bbb;
 $color__border-input         : #ccc;
 $color__border-abbr          : #666;
+
+* {
+  background-color: $sample2;
+}
