@@ -1,16 +1,25 @@
+.site-branding {
+  @include padding(1);
+  clear: left;
+}
 .site-title,
 .site-description {
   font-family: $font__headings;
 }
 .site-logo,
 .site-description {
-  margin: auto;  
+  margin: auto;
+  text-align: center;
+  @include media(tablet, general) {
+    margin: 0;
+    text-align: left;
+  }
 }
 
 .site-logo {
-  @include padding-top(1);
   display: block;
   max-width: 260px;
+
 }
 
 .site-title {
@@ -21,7 +30,6 @@
 .site-description {
   @include font-size(.75);
   font-weight: 400;
-  text-align: center;
   color: $c__red;
   div {
     display: inline;
@@ -30,4 +38,3 @@
     @include font-size(1.025);
   }
 }
-

@@ -25,4 +25,7 @@ body {
 
 .site {
   background-color: $bg2;
+  @include media(tablet, general) {
+    @include margin-sides(1);
+  }
 }

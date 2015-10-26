@@ -67,6 +67,14 @@
   margin-left: $sizeValue * 1rem;
 }
 
+// Rem margin sides output with px fallback
+@mixin margin-sides($sizeValue: 1) {
+  margin-left: ($sizeValue * 16) * 1px;
+  margin-left: $sizeValue * 1rem;
+  margin-right: ($sizeValue * 16) * 1px;
+  margin-right: $sizeValue * 1rem;
+}
+
 // Rem margin output with px fallback
 @mixin margin($sizeValue: 1) {
   margin: ($sizeValue * 16) * 1px;

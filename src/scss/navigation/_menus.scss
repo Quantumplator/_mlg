@@ -5,6 +5,9 @@
 	float: left;
 	width: 100%;
 	background: $bg1;
+	@include media(tablet, general) {
+		@include padding-bottom(1);
+	}
 
 	ul {
 		display: none;
@@ -56,6 +59,7 @@
 	li {
 		float: left;
 		position: relative;
+		line-height: 2;
 
 		&:hover > a,
 		&.focus > a {
@@ -76,10 +80,11 @@
 .menu-toggle {
 	@include margin-left(1);
 	@include margin-bottom(1);
-	transition: all 0.3s ease-in-out;
+	// transition: all 0.3s ease-in-out;
 
 	@include media(tablet, general) {
 		display: none;
+		margin: 0;
 	}
 
 	&, &:hover, &:active, &:focus {
@@ -91,7 +96,10 @@
 	}
 	i {
 		@include font-size(2);
-	}
+		@include media(tablet, general) {
+			display: none;
+		}
+	} 
 }
 .main-navigation.toggled .menu-toggle {
 	// transform: rotate(90deg);
