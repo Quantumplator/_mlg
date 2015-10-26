@@ -68,6 +68,7 @@
 	a {
 		display: block;
 		text-decoration: none;
+		color: $c__blue-lighter;
 	}
 
 	.current_page_item > a,
@@ -77,10 +78,18 @@
 }
 
 /* Small menu. */
+.menu-toggle {
+	@include margin-left(1);
+}
+.search-toggle {
+	@include margin-right(1);
+	float: right;
+}
+
+
 .menu-toggle,
 .search-toggle {
 	display: inline-block;
-	@include margin-left(1);
 	@include margin-bottom(1);
 	@include media(tablet, general) {
 		display: none;
@@ -123,7 +132,7 @@
 /* Search */
 .search-form {
 	position: absolute;
-	top: 0; right: 0;
+	top: 0; right: 64px;
 	@include margin-top(1);
 	.search-submit {
 		display: none;
