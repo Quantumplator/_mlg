@@ -33,7 +33,12 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
 			<?php _mlg_social_menu(); ?>
+
+			<?php get_search_form(); ?>
 		
+			<!-- When you have time, hook custom search function to set id #search and add aria-controls="search" to this button. Semantics.  -->
+			<button class="search-toggle" aria-expanded="false"><span class="screen-reader-text"><?php esc_html_e( 'Search', '_mlg' ); ?></span><i class="fa fa-search"></i></button>
+
 		</nav><!-- #site-navigation -->
 
 		<div class="site-branding">

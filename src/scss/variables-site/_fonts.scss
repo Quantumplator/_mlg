@@ -1,2 +1,6 @@
 $fa-font-path:        "../_mlg/fonts";
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
+
+.fa {
+  text-shadow: 1px 1px 1px $bg2;
+}

@@ -29,3 +29,7 @@ body {
     @include margin-sides(1);
   }
 }
+
+.site-content {
+  @include padding(1);
+}
