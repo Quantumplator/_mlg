@@ -1,9 +1,19 @@
-.site-branding {
-  @include padding(1);
-  clear: left;
+.site-header {
   background: $bg1;
+}
+
+.site-branding {
+  @include padding-top(1);
+  @include padding-bottom(1);
+  @include padding-left(1);
+  clear: left;
+  // background: $bg1;
   @include media(tablet, general) {
     // padding-left: 0;            // Enable this to flush the logo with left side
+  }
+  .site-branding-container,
+  .site-action-container {
+    display: inline-block;    
   }
   .site-branding-container {
     max-width: 368px;
@@ -11,6 +21,12 @@
     @include media(tablet, general) {
       margin: 0;
     }
+  }
+  .site-action-container {
+    width: 416px; // Testing
+    height: 125.5px; // Testing
+    float: right; // Testing
+    background: white; // Testing
   }
 }
 .site-title,
@@ -35,12 +51,13 @@
   }
 }
 .site-description {
+  @include font-size(1);
+  font-weight: 400;
+  line-height: 1;
+  color: $c__red;
   @include media(iphone, general) {
     @include font-size(.75);
   }
-  @include font-size(1);
-  font-weight: 400;
-  color: $c__red;
   div {
     display: inline;
   }
