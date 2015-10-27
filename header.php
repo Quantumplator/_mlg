@@ -40,7 +40,11 @@
 		</nav><!-- #site-navigation -->
 
 		<div class="site-branding">
-			<div class="site-action-container"></div>
+			<div class="site-action-container">
+				<a class="site-action" href="#consultation">FREE CONSULTATION</a>
+				<a class="site-phone" href="tel:8055411151">(805) 541-1151</a>
+				<a class="site-email" href="mailto:info@marcheselawgroup.com">info@marcheselawgroup.com</a>
+			</div>
 			<div class="site-branding-container">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="site-logo" src="http://localhost:8888/marchese/wp-content/themes/_mlg/img/logo.png" title="Marchese Law Group" />
 				</a><h1 class="site-title screen-reader-text"><?php bloginfo( 'name' ); ?></h1>
