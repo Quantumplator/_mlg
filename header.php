@@ -27,23 +27,18 @@
 	<header id="masthead" class="site-header" role="banner">
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="screen-reader-text"><?php esc_html_e( 'Primary Menu', '_mlg' ); ?></span><i class="fa fa-bars"></i></button>
-
 			<!-- When you have time, hook custom search function to set id #search and add aria-controls="search" to this button. Semantics.  -->
       <button class="search-toggle" aria-expanded="false"><span class="screen-reader-text"><?php // esc_html_e( 'Search', '_mlg' ); ?></span><i class="fa fa-search"></i></button>
-
-			<?php get_search_form(); ?>
-			
+			<?php get_search_form(); ?>			
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-
 		</nav><!-- #site-navigation -->
 
 		<div class="site-branding">
 			<div class="site-action-container">
 				<a class="site-action" href="#consultation">FREE CONSULTATION</a>
 				<a class="site-phone" href="tel:8055411151">(805) 541-1151</a>
-				<a class="site-email" href="mailto:info@marcheselawgroup.com">info@marcheselawgroup.com</a>
+				<a class="site-email" href="mailto:info@marcheselawgroup.com">info@MarcheseLawGroup.com</a>
 			</div>
 			<div class="site-branding-container">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="site-logo" src="http://localhost:8888/marchese/wp-content/themes/_mlg/img/logo.png" title="Marchese Law Group" />

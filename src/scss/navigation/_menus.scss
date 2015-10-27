@@ -1,12 +1,11 @@
 .main-navigation {
-	@include padding-top(1);
+	@include padding-top(2);
 	clear: both;
 	display: block;
 	float: left;
 	width: 100%;
 	background: $bg1;
 	@include media(tablet, general) {
-		@include padding-top(2);
 		@include padding-bottom(1);
 	}
 

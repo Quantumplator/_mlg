@@ -1,5 +1,6 @@
 .site-header {
   background: $bg1;
+  position: relative;
 }
 
 .site-branding {
@@ -23,29 +24,31 @@
     }
   }
   .site-action-container {
-    // width: 416px; // Testing
-    height: 125.5px; // Testing
-    float: right; // Testing
-    background: $bg1; // Testing
-
-    position: relative;
+    background: white; // Testing
+    @include media(tablet, general) {
+      position: relative;
+      float: right;
+      min-height: 125.5px;
+    }
     a {
       display: block;
       float: right;
       clear: right;
-      font-family: 'Lora';
       font-weight: 700;
+      // font-family: 'Lora'; // Maybe send samples with both fonts here? Sans Pro is more understated, better. Left side is branding and panache, right side is pragmatic action.
       &, &:hover {
         text-decoration: none;
       }
     }
     .site-action {
-      @include margin-bottom(2);
-      @include font-size(2);
-      line-height: .75;
-      color: $c__red;
-      &:hover {
-        color: $c__red-dark;
+      @include media(tablet, general) {
+        @include margin-bottom(2);
+        @include font-size(2);
+        line-height: .75;
+        color: $c__red;
+        &:hover {
+          color: $c__red-dark;
+        }
       }
     }
     .site-action,
