@@ -62,7 +62,8 @@
 		position: relative;
 		line-height: 2;
 		@include media(tablet, general) {
-			@include padding-sides(0.5);
+			@include padding-sides(0.5); // this spaces them evenly
+			@include margin-right(0.5); // 1px right marge
 			border-radius: 3px;
 		}
 		&:hover,
@@ -153,6 +154,7 @@
 		display: block;
 	}
 	input {
+		-webkit-appearance: none;
 		box-sizing: border-box;
 		width: 100%;
 		border: 0;
@@ -182,6 +184,10 @@
 
 .fa {
 	text-shadow: 1px 1px 1px $bg2;
+	&::before {
+		display: block;
+		width: 32px;
+	}
 }
 
 /* Social menu. */

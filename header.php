@@ -41,8 +41,8 @@
 
 		<div class="site-branding">
 			<div class="site-branding-container">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="site-logo" src="wp-content/themes/_mlg/img/logo.png" title="Marchese Law Group" /></a>
-				<h1 class="site-title screen-reader-text"><?php bloginfo( 'name' ); ?></h1>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="site-logo" src="wp-content/themes/_mlg/img/logo.png" title="Marchese Law Group" />
+				</a><h1 class="site-title screen-reader-text"><?php bloginfo( 'name' ); ?></h1>
 				<h2 class="site-description">
 					<div><span>C</span>ENTRAL<span> C</span>OAST</div>
 					<div><span>B</span>ANKRUPTCY<span> L</span>AWYERS</div>
