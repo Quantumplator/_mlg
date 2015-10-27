@@ -24,9 +24,13 @@ body {
 }
 
 .site {
+  max-width: 800px;
   background-color: $bg2;
   @include media(tablet, general) {
     @include margin-sides(1);
+  }
+  @include media(small, general) {
+    margin: 0 auto;
   }
 }
 

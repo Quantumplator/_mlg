@@ -7,7 +7,6 @@
 	background: $bg1;
 	@include media(tablet, general) {
 		@include padding-bottom(1);
-		@include padding-left(1);
 	}
 
 	ul {

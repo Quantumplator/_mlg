@@ -2,6 +2,9 @@
   @include padding(1);
   clear: left;
   background: $bg1;
+  @include media(tablet, general) {
+    // padding-left: 0;            // Enable this to flush the logo with left side
+  }
   .site-branding-container {
     max-width: 368px;
     margin: 0 auto;
