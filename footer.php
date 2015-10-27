@@ -19,6 +19,9 @@
 			<span class="sep"> | </span>
 			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', '_mlg' ), '_mlg', '<a href="https://dylanjharris.net" rel="designer">Dylan J Harris</a>' ); ?>
 		</div><!-- .site-info -->
+
+    <?php // _mlg_social_menu(); ?>
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
