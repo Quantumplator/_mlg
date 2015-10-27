@@ -49,9 +49,9 @@
 				<a class="site-email" href="mailto:info@marcheselawgroup.com">info@MarcheseLawGroup.com</a>
 			</div>
 			<div class="site-extra-container">
-				<a class="site-action" href="#consultation">Need a</a>
-				<a class="site-phone" href="tel:8055411151">FRESH START?</a>
-				<a class="site-email" href="mailto:info@marcheselawgroup.com">info@MarcheseLawGroup.com</a>
+				<span class="site-action" href="">Need a</span>
+				<span class="site-phone" href="">FRESH START?</span>
+				<span class="site-email" href=""></span>
 			</div>
 		</div><!-- .site-branding -->
 

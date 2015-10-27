@@ -38,7 +38,9 @@
       float: right;
       min-height: 125.5px;
     }
-    a {
+    .site-action,
+    .site-phone,
+    .site-email {
       display: block;
       float: right;
       clear: right;
@@ -73,7 +75,7 @@
     }
     .site-phone {
       @include font-size(2.1);
-      line-height: 1.666;
+      line-height: 2;
       min-height: 46px;
       @include media(tablet, general) {
         @include font-size(2.5);
@@ -85,6 +87,7 @@
       }
       &::before {
         @include font-size(2.5);
+        text-shadow: 1px 1px 1px $c__red-dark;
         font-family: 'Fontawesome';
         display: inline-block;
         padding-right: 16px;
@@ -104,6 +107,9 @@
         bottom: 0; right: 0;
         line-height: 0.9;
       }
+      &:hover {
+        color: $c__text-main;
+      }
       &::before {
         font-family: 'Fontawesome';
         padding-right: 8px;
@@ -112,18 +118,40 @@
     }
   }
   .site-extra-container { // ***
+    @include media(mobile, general) {
+      display: none;
+    }
     float: left;
     text-align: left;
-    a {
+    .site-action, 
+    .site-phone, 
+    .site-email { // <-- These styles are just to hack the extra-container
       float: left;
       clear: left;
-    }
-    .site-action, .site-phone, .site-email { // <-- These styles are just to hack the extra-container
       margin-bottom: 0;
       &::before {
         display: none;
         font-size: 0;
       }
+    }
+    .site-action:hover{
+      color: $c__red;
+    }
+    .site-phone:hover {
+      color: $c__red-dark;
+    }
+    .site-action {
+      line-height: 1;
+      font-family: 'Lora';
+    }
+    .site-phone {
+      @include font-size(3.3);
+      line-height: 1;
+    }
+    .site-email {
+      position: relative;
+      max-width: 368px;
+      @include padding-bottom(1);
     }
   }
 }
@@ -149,17 +177,26 @@
   }
 }
 .site-description {
-  @include font-size(1);
   font-weight: 400;
   line-height: 1;
   color: $c__red;
+  @include font-size(1.2); // Adjust these and those below for a two level effect
   @include media(iphone, general) {
-    @include font-size(.75);
+    @include font-size(.8);
+  }
+  @include media(tablet, general) {
+    @include font-size(1.42);
   }
   div {
     display: inline;
   }
-  span {
-    @include font-size(1.25);
+  span { // Adjust these and those above for a two level effect
+    @include font-size(1.7); 
+    @include media(iphone, general) {
+      @include font-size(1.3);
+    }
+    @include media(tablet, general) {
+      @include font-size(2);
+    }
   }
 }
