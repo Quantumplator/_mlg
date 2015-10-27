@@ -164,7 +164,7 @@
 		border-radius: 0;
 		background: $bg2;
 		line-height: 2;
-		@include padding-left(1);
+		@include padding-sides(1);
 		@include padding-top(1);
 		@include padding-bottom(1);
 		@include media(tablet, general) {
