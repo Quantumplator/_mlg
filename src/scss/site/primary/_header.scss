@@ -4,13 +4,11 @@
 }
 
 .site-branding {
-  @include padding-top(1);
-  @include padding-bottom(1);
-  @include padding-left(1);
+  @include padding(1);
   clear: left;
   // background: $bg1;
   @include media(tablet, general) {
-    // padding-left: 0;            // Enable this to flush the logo with left side
+    padding-right: 0;
   }
   .site-branding-container,
   .site-action-container {
@@ -24,7 +22,9 @@
     }
   }
   .site-action-container {
-    background: white; // Testing
+    // transform: translateY(-96px);
+    // transform: translateY(-6rem);
+    // background: white; // Testing
     @include media(tablet, general) {
       position: relative;
       float: right;
@@ -78,9 +78,11 @@
       }
     }
     .site-email {
-      position: absolute;
-      bottom: 0; right: 0;
-      line-height: 1.1;
+      @include media(tablet, general) {
+        position: absolute;
+        bottom: 0; right: 0;
+        line-height: 1.1;
+      }
       &::before {
         font-family: 'Fontawesome';
         padding-right: 8px;
