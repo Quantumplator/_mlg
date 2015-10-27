@@ -40,7 +40,7 @@
       }
     }
     .site-action {
-      @include margin-bottom(1.75);
+      @include margin-bottom(2);
       @include font-size(2);
       line-height: .75;
       color: $c__red;
@@ -61,13 +61,25 @@
       }
     }
     .site-phone {
-      @include font-size(3);
+      @include font-size(2.5);
       line-height: .5;
+      &::before {
+        font-family: 'Fontawesome';
+        display: inline-block;
+        padding-right: 16px;
+        content: '\f095';
+        transform: translateY(2px);
+      }
     }
     .site-email {
       position: absolute;
       bottom: 0; right: 0;
       line-height: 1.1;
+      &::before {
+        font-family: 'Fontawesome';
+        padding-right: 8px;
+        content: '\f003';
+      }
     }
   }
 }

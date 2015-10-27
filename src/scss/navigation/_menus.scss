@@ -6,6 +6,7 @@
 	width: 100%;
 	background: $bg1;
 	@include media(tablet, general) {
+		@include padding-top(2);
 		@include padding-bottom(1);
 	}
 
