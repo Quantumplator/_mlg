@@ -100,6 +100,7 @@
 
 .menu-toggle,
 .search-toggle {
+	z-index: 9999;
 	display: inline-block;
 	@include margin-bottom(1);
 	@include media(tablet, general) {

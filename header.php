@@ -28,6 +28,11 @@
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="screen-reader-text"><?php esc_html_e( 'Primary Menu', '_mlg' ); ?></span><i class="fa fa-bars"></i></button>
+			<div class="site-top-extra-container">
+				<span class="site-action" href="">need a</span>
+				<span class="site-phone" href="">FRESH START?</span>
+				<span class="site-email" href=""></span>
+			</div>
 			<!-- When you have time, hook custom search function to set id #search and add aria-controls="search" to this button. Semantics.  -->
       <button class="search-toggle" aria-expanded="false"><span class="screen-reader-text"><?php // esc_html_e( 'Search', '_mlg' ); ?></span><i class="fa fa-search"></i></button>
 			<?php get_search_form(); ?>			
@@ -49,12 +54,17 @@
 				<a class="site-email" href="mailto:info@marcheselawgroup.com">info@MarcheseLawGroup.com</a>
 			</div>
 			<div class="site-extra-container">
-				<span class="site-action" href="">Need a</span>
+				<span class="site-action" href="">need a</span>
 				<span class="site-phone" href="">FRESH START?</span>
 				<span class="site-email" href=""></span>
 			</div>
 		</div><!-- .site-branding -->
 
 	</header><!-- #masthead -->
+
+
+	<div id="hero" class="splash-header">
+		<img src="http://localhost:8888/marchese/wp-content/uploads/marcheses.png" title="Marchese Law Group" />
+	</div>
 
 	<div id="content" class="site-content">

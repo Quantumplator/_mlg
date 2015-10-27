@@ -34,7 +34,33 @@ body {
   }
 }
 
+.splash-header {
+  width: 100%;
+  @include clearfix;
+  img {
+    float: right;
+    max-width: 300px;
+  }
+}
+
+.splash-header,
+.site-content {
+  box-shadow: 1px 1px 1px $c__text-main;  
+}
+
 .site-content {
   @include padding(1);
-  box-shadow: 1px 1px 1px $c__black-lighter;
+  @include media(tablet, general) {
+    display: flex;
+  }
+}
+
+.content-area {
+  @include padding-right(1);
+
+}
+.widget-area {
+  @include media(tablet, general) {
+    min-width: 300px;
+  }
 }

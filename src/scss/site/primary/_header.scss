@@ -141,12 +141,15 @@
       color: $c__red-dark;
     }
     .site-action {
-      line-height: 1;
-      font-family: 'Lora';
+      // line-height: 1;
+      @include padding-top(1.5);
+      padding-left: 2px;
+      color: $c__red-dark;
+
     }
     .site-phone {
       @include font-size(3.3);
-      line-height: 1;
+      // line-height: 1;
     }
     .site-email {
       position: relative;
@@ -155,6 +158,30 @@
     }
   }
 }
+
+
+.site-top-extra-container {
+  display: none;
+  // @include media(mobile, general) {
+  //   display: block;
+  //   position: absolute;
+  //   top: 0;
+  //   width: 50%;
+  //   margin: 0 auto;
+  //   text-align: center;
+  //   @include padding-top(1);
+  //   span {
+  //     z-index: 0;
+  //   }
+  //   .site-action {
+  //     color: $c__red;
+  //   }
+  //   .site-phone {
+  //     color: $c__blue;
+  //   }
+  // }
+}
+
 .site-title,
 .site-description {
   font-family: $font__headings;
