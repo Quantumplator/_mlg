@@ -23,7 +23,7 @@
     }
   }
   .site-action-container {
-    width: 416px; // Testing
+    // width: 416px; // Testing
     height: 125.5px; // Testing
     float: right; // Testing
     background: $bg1; // Testing
@@ -63,12 +63,15 @@
     .site-phone {
       @include font-size(2.5);
       line-height: .5;
+      &:hover {
+        color: $c__text-main;
+      }
       &::before {
         font-family: 'Fontawesome';
         display: inline-block;
         padding-right: 16px;
         content: '\f095';
-        transform: translateY(2px);
+        transform: translateY(3px);
       }
     }
     .site-email {

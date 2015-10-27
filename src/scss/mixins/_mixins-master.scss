@@ -117,8 +117,8 @@
 // Media Queries Mixin from http://hmphry.com/useful-sass-mixins
 $media-stack:
   (group: iphone, id: general, rule: "only screen and (max-width: 380px)"),
-  (group: mobile, id: general, rule: "only screen and (max-width: 779.9px)"),
-  (group: tablet, id: general, rule: "only screen and (min-width: 780px)"),
+  (group: mobile, id: general, rule: "only screen and (max-width: 799.9px)"),
+  (group: tablet, id: general, rule: "only screen and (min-width: 800px)"),
   (group: small, id: general, rule: "only screen and (min-width: 848px)"),
   (group: small, id: inbetween, rule: "only screen and(min-width: 1056px) and (max-device-width: 1400px)"),
   (group: large, id: general, rule: "only screen and(min-width: 1400px)"),
