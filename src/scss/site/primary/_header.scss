@@ -2,6 +2,13 @@
   @include padding(1);
   clear: left;
   background: $bg1;
+  .site-branding-container {
+    max-width: 368px;
+    margin: 0 auto;
+    @include media(tablet, general) {
+      margin: 0;
+    }
+  }
 }
 .site-title,
 .site-description {
@@ -10,15 +17,13 @@
 .site-logo,
 .site-description {
   margin: auto;
-  text-align: center;
   @include media(tablet, general) {
     margin: 0;
     text-align: left;
   }
 }
-
 .site-logo {
-  display: inline-block;
+  display: block;
 }
 
 .site-title {
@@ -27,13 +32,16 @@
   }
 }
 .site-description {
-  @include font-size(.75);
+  @include media(iphone, general) {
+    @include font-size(.75);
+  }
+  @include font-size(1);
   font-weight: 400;
   color: $c__red;
   div {
     display: inline;
   }
   span {
-    @include font-size(1.025);
+    @include font-size(1.25);
   }
 }
