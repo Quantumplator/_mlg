@@ -64,6 +64,7 @@
 
 
 	<div id="hero" class="splash-header">
+		<h1>Welcome<span class="welcome"> to Marchese Law Group</span></h1>
 		<img src="http://localhost:8888/marchese/wp-content/uploads/marcheses.png" title="Marchese Law Group" />
 	</div>
 

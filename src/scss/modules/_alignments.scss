@@ -1,7 +1,8 @@
 .alignleft {
 	display: inline;
 	float: left;
-	margin-right: 1.5em;
+  @include margin-right(1.5);
+  @include margin-bottom(1);
 }
 
 .alignright {

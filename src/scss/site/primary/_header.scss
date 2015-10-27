@@ -51,6 +51,7 @@
       }
     }
     .site-action {
+      color: $c__blue-light;
       @include media(tablet, general) {
         @include margin-bottom(2);
         @include font-size(2);
@@ -150,6 +151,10 @@
     .site-phone {
       @include font-size(3.3);
       // line-height: 1;
+    }
+    .site-action,
+    .site-phone {
+      color: $c__blue;
     }
     .site-email {
       position: relative;
