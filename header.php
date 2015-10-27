@@ -48,6 +48,11 @@
 				<a class="site-phone" href="tel:8055411151">(805) 541-1151</a>
 				<a class="site-email" href="mailto:info@marcheselawgroup.com">info@MarcheseLawGroup.com</a>
 			</div>
+			<div class="site-extra-container">
+				<a class="site-action" href="#consultation">Need a</a>
+				<a class="site-phone" href="tel:8055411151">FRESH START?</a>
+				<a class="site-email" href="mailto:info@marcheselawgroup.com">info@MarcheseLawGroup.com</a>
+			</div>
 		</div><!-- .site-branding -->
 
 	</header><!-- #masthead -->

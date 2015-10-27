@@ -1,27 +1,35 @@
 .site-header {
   background: $bg1;
   position: relative;
+  * {
+    background: transparent;
+  }
 }
 
 .site-branding {
-  @include padding(1);
+  @include padding-top(1);
+  @include padding-sides(1);
   clear: left;
   // background: $bg1;
   @include media(tablet, general) {
     padding-right: 0;
+    @include padding-bottom(1);
   }
   .site-branding-container,
   .site-action-container {
-    display: inline-block;    
+    @include media(tablet, general) {
+      display: inline-block;          
+    }
   }
   .site-branding-container {
-    max-width: 368px;
     margin: 0 auto;
     @include media(tablet, general) {
       margin: 0;
     }
   }
-  .site-action-container {
+
+  .site-action-container,
+  .site-extra-container {
     // transform: translateY(-96px);
     // transform: translateY(-6rem);
     // background: white; // Testing
@@ -44,7 +52,7 @@
       @include media(tablet, general) {
         @include margin-bottom(2);
         @include font-size(2);
-        line-height: .75;
+        line-height: 1.1;
         color: $c__red;
         &:hover {
           color: $c__red-dark;
@@ -64,29 +72,57 @@
       }
     }
     .site-phone {
-      @include font-size(2.5);
-      line-height: .5;
+      @include font-size(2.1);
+      line-height: 1.666;
+      min-height: 46px;
+      @include media(tablet, general) {
+        @include font-size(2.5);
+        line-height: .5;
+        min-height: 84px;
+      }
       &:hover {
         color: $c__text-main;
       }
       &::before {
+        @include font-size(2.5);
         font-family: 'Fontawesome';
         display: inline-block;
         padding-right: 16px;
         content: '\f095';
         transform: translateY(3px);
+        color: $c__blue-light;
+        @include media(tablet, general) {
+          @include font-size(4);
+          color: $c__red;
+        }
       }
     }
     .site-email {
+      line-height: .9;
       @include media(tablet, general) {
         position: absolute;
         bottom: 0; right: 0;
-        line-height: 1.1;
+        line-height: 0.9;
       }
       &::before {
         font-family: 'Fontawesome';
         padding-right: 8px;
         content: '\f003';
+      }
+    }
+  }
+  .site-extra-container { // ***
+    float: left;
+    text-align: left;
+    a {
+      float: left;
+      clear: left;
+    }
+    .site-action, .site-phone, .site-email { // <-- These styles are just to hack the extra-container
+      margin-bottom: 0;
+      &::before {
+        display: none;
+        font-size: 0;
       }
     }
   }

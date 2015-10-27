@@ -36,4 +36,5 @@ body {
 
 .site-content {
   @include padding(1);
+  box-shadow: 1px 1px 1px $c__black-lighter;
 }
