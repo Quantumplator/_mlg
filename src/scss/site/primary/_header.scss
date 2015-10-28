@@ -15,8 +15,7 @@
     padding-right: 0;
     @include padding-bottom(1);
   }
-  .site-branding-container,
-  .site-action-container {
+  .site-branding-container {
     @include media(tablet, general) {
       display: inline-block;          
     }
@@ -28,16 +27,53 @@
     }
   }
 
+
   .site-action-container,
   .site-extra-container {
-    // transform: translateY(-96px);
-    // transform: translateY(-6rem);
-    // background: white; // Testing
+
+  }
+
+  .site-action-container {
+    background: white; // Testing
     @include media(tablet, general) {
       position: relative;
       float: right;
-      min-height: 125.5px;
+      // min-height: 125.5px;
     }
+    .site-action {
+
+    }
+    .mlg-free,
+    .mlg-phone,
+    .mlg-email,
+    .mlg-address {
+
+      &::before {
+        font-family: 'Fontawesome';
+      }
+    }
+    .mlg-free {
+
+    }
+    .mlg-phone {
+      &::before {
+        content: '\f095';
+      }
+    }
+    .mlg-email {
+      &::before {
+        content: '\f003';
+
+      }
+    }
+    .mlg-address {
+      &::before {
+
+      }
+    }
+
+
+
     .site-action,
     .site-phone,
     .site-email {
@@ -92,7 +128,7 @@
         font-family: 'Fontawesome';
         display: inline-block;
         padding-right: 16px;
-        content: '\f095';
+
         transform: translateY(3px);
         color: $c__blue-light;
         @include media(tablet, general) {
@@ -114,7 +150,7 @@
       &::before {
         font-family: 'Fontawesome';
         padding-right: 8px;
-        content: '\f003';
+
       }
     }
   }
@@ -201,6 +237,7 @@
 }
 .site-logo {
   display: block;
+  // max-width: 368px; // Use this to control version 2 of the header
 }
 
 .site-title {

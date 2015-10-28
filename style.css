@@ -3662,8 +3662,7 @@ body {
   }
 }
 @media only screen and (min-width: 800px) {
-  .site-branding .site-branding-container,
-  .site-branding .site-action-container {
+  .site-branding .site-branding-container {
     display: inline-block;
   }
 }
@@ -3675,20 +3674,30 @@ body {
     margin: 0;
   }
 }
+.site-branding .site-action-container {
+  background: white;
+}
 @media only screen and (min-width: 800px) {
-  .site-branding .site-action-container,
-  .site-branding .site-extra-container {
+  .site-branding .site-action-container {
     position: relative;
     float: right;
-    min-height: 125.5px;
   }
+}
+.site-branding .site-action-container .mlg-free::before,
+.site-branding .site-action-container .mlg-phone::before,
+.site-branding .site-action-container .mlg-email::before,
+.site-branding .site-action-container .mlg-address::before {
+  font-family: 'Fontawesome';
+}
+.site-branding .site-action-container .mlg-phone::before {
+  content: '\f095';
+}
+.site-branding .site-action-container .mlg-email::before {
+  content: '\f003';
 }
 .site-branding .site-action-container .site-action,
 .site-branding .site-action-container .site-phone,
-.site-branding .site-action-container .site-email,
-.site-branding .site-extra-container .site-action,
-.site-branding .site-extra-container .site-phone,
-.site-branding .site-extra-container .site-email {
+.site-branding .site-action-container .site-email {
   display: block;
   float: right;
   clear: right;
@@ -3698,22 +3707,14 @@ body {
 .site-branding .site-action-container .site-phone,
 .site-branding .site-action-container .site-phone:hover,
 .site-branding .site-action-container .site-email,
-.site-branding .site-action-container .site-email:hover,
-.site-branding .site-extra-container .site-action,
-.site-branding .site-extra-container .site-action:hover,
-.site-branding .site-extra-container .site-phone,
-.site-branding .site-extra-container .site-phone:hover,
-.site-branding .site-extra-container .site-email,
-.site-branding .site-extra-container .site-email:hover {
+.site-branding .site-action-container .site-email:hover {
   text-decoration: none;
 }
-.site-branding .site-action-container .site-action,
-.site-branding .site-extra-container .site-action {
+.site-branding .site-action-container .site-action {
   color: #066cdd;
 }
 @media only screen and (min-width: 800px) {
-  .site-branding .site-action-container .site-action,
-  .site-branding .site-extra-container .site-action {
+  .site-branding .site-action-container .site-action {
     margin-bottom: 32px;
     margin-bottom: 2rem;
     font-size: 32px;
@@ -3721,86 +3722,70 @@ body {
     line-height: 1.1;
     color: #9e201d;
   }
-  .site-branding .site-action-container .site-action:hover,
-  .site-branding .site-extra-container .site-action:hover {
+  .site-branding .site-action-container .site-action:hover {
     color: #551110;
   }
 }
 .site-branding .site-action-container .site-phone,
-.site-branding .site-action-container .site-email,
-.site-branding .site-extra-container .site-phone,
-.site-branding .site-extra-container .site-email {
+.site-branding .site-action-container .site-email {
   color: #551110;
 }
 .site-branding .site-action-container .site-phone:hover,
-.site-branding .site-action-container .site-email:hover,
-.site-branding .site-extra-container .site-phone:hover,
-.site-branding .site-extra-container .site-email:hover {
+.site-branding .site-action-container .site-email:hover {
   color: #551110;
 }
-.site-branding .site-action-container .site-phone,
-.site-branding .site-extra-container .site-phone {
+.site-branding .site-action-container .site-phone {
   font-size: 33.6px;
   font-size: 2.1rem;
   line-height: 2;
   min-height: 46px;
 }
 @media only screen and (min-width: 800px) {
-  .site-branding .site-action-container .site-phone,
-  .site-branding .site-extra-container .site-phone {
+  .site-branding .site-action-container .site-phone {
     font-size: 40px;
     font-size: 2.5rem;
     line-height: .5;
     min-height: 84px;
   }
 }
-.site-branding .site-action-container .site-phone:hover,
-.site-branding .site-extra-container .site-phone:hover {
+.site-branding .site-action-container .site-phone:hover {
   color: #050517;
 }
-.site-branding .site-action-container .site-phone::before,
-.site-branding .site-extra-container .site-phone::before {
+.site-branding .site-action-container .site-phone::before {
   font-size: 40px;
   font-size: 2.5rem;
   text-shadow: 1px 1px 1px #551110;
   font-family: 'Fontawesome';
   display: inline-block;
   padding-right: 16px;
-  content: '\f095';
   -webkit-transform: translateY(3px);
           transform: translateY(3px);
   color: #066cdd;
 }
 @media only screen and (min-width: 800px) {
-  .site-branding .site-action-container .site-phone::before,
-  .site-branding .site-extra-container .site-phone::before {
+  .site-branding .site-action-container .site-phone::before {
     font-size: 64px;
     font-size: 4rem;
     color: #9e201d;
   }
 }
-.site-branding .site-action-container .site-email,
-.site-branding .site-extra-container .site-email {
+.site-branding .site-action-container .site-email {
   line-height: .9;
 }
 @media only screen and (min-width: 800px) {
-  .site-branding .site-action-container .site-email,
-  .site-branding .site-extra-container .site-email {
+  .site-branding .site-action-container .site-email {
     position: absolute;
     bottom: 0;
     right: 0;
     line-height: 0.9;
   }
 }
-.site-branding .site-action-container .site-email:hover,
-.site-branding .site-extra-container .site-email:hover {
+.site-branding .site-action-container .site-email:hover {
   color: #050517;
 }
-.site-branding .site-action-container .site-email::before,
-.site-branding .site-extra-container .site-email::before {
+.site-branding .site-action-container .site-email::before {
   font-family: 'Fontawesome';
   padding-right: 8px;
-  content: '\f003';
 }
 .site-branding .site-extra-container {
   float: left;

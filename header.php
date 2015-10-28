@@ -29,9 +29,9 @@
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="screen-reader-text"><?php esc_html_e( 'Primary Menu', '_mlg' ); ?></span><i class="fa fa-bars"></i></button>
 			<div class="site-top-extra-container">
-				<span class="site-action" href="">need a</span>
+<!-- 				<span class="site-action" href="">need a</span>
 				<span class="site-phone" href="">FRESH START?</span>
-				<span class="site-email" href=""></span>
+				<span class="site-email" href=""></span> -->
 			</div>
 			<!-- When you have time, hook custom search function to set id #search and add aria-controls="search" to this button. Semantics.  -->
       <button class="search-toggle" aria-expanded="false"><span class="screen-reader-text"><?php // esc_html_e( 'Search', '_mlg' ); ?></span><i class="fa fa-search"></i></button>
@@ -49,14 +49,15 @@
 				</h2>
 			</div>
 			<div class="site-action-container">
-				<a class="site-action" href="#consultation">FREE CONSULTATION</a>
-				<a class="site-phone" href="tel:8055411151">(805) 541-1151</a>
-				<a class="site-email" href="mailto:info@marcheselawgroup.com">info@MarcheseLawGroup.com</a>
+				<a class="site-action mlg-free" href="#consultation">FREE CONSULTATION</a>
+				<a class="site-action mlg-phone" href="tel:8055411151">(805) 541-1151</a>
+				<a class="site-action mlg-email" href="mailto:info@marcheselawgroup.com">info@MarcheseLawGroup.com</a>
+				<a class="site-action mlg-address" href="mailto:info@marcheselawgroup.com">873 A Santa Rosa St, San Luis Obispo, CA 93401</a>
 			</div>
 			<div class="site-extra-container">
-				<span class="site-action" href="">need a</span>
+<!-- 				<span class="site-action" href="">need a</span>
 				<span class="site-phone" href="">FRESH START?</span>
-				<span class="site-email" href=""></span>
+				<span class="site-email" href=""></span> -->
 			</div>
 		</div><!-- .site-branding -->
 
