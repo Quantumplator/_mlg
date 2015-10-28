@@ -3387,6 +3387,10 @@ a:hover, a:active {
   width: 50%;
 }
 
+.edit-link {
+  display: none;
+}
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -3497,6 +3501,7 @@ a:hover, a:active {
 
 #consultation {
   font-style: italic;
+  margin-top: 0;
 }
 
 /*--------------------------------------------------------------
@@ -3567,6 +3572,8 @@ body {
   clear: left;
   width: 100%;
   margin-top: 0;
+  padding-right: 16px;
+  padding-right: 1rem;
 }
 @media only screen and (min-width: 800px) {
   .splash-header p {
@@ -3604,8 +3611,12 @@ body {
 }
 
 .content-container {
-  padding: 16px;
-  padding: 1rem;
+  padding-top: 16px;
+  padding-top: 1rem;
+  padding-left: 16px;
+  padding-left: 1rem;
+  padding-right: 16px;
+  padding-right: 1rem;
 }
 @media only screen and (min-width: 800px) {
   .content-container {
@@ -3616,8 +3627,13 @@ body {
 }
 
 .content-area {
-  padding-right: 16px;
-  padding-right: 1rem;
+  padding-right: 0;
+}
+@media only screen and (min-width: 800px) {
+  .content-area {
+    padding-right: 16px;
+    padding-right: 1rem;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -3664,6 +3680,21 @@ body {
 @media only screen and (max-width: 568px) {
   .size-thumbnail {
     max-width: 100px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .tablet-down {
+    display: none;
+  }
+}
+
+.tablet-up {
+  display: none;
+}
+@media only screen and (min-width: 800px) {
+  .tablet-up {
+    display: inline;
   }
 }
 

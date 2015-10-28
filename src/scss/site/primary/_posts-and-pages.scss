@@ -32,3 +32,16 @@
     max-width: 100px;
   }
 }
+
+.tablet-down { // For toggling text
+  @include media(tablet, general) {
+    display: none;
+  }
+}
+
+.tablet-up {
+  display: none;
+  @include media(tablet, general) {
+    display: inline;
+  }
+}

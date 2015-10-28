@@ -67,6 +67,7 @@ body {
     clear: left;
     width: 100%;
     margin-top: 0;
+    @include padding-right(1);
     @include media(iphone, general) {
     }
     @include media(tablet, general) {
@@ -108,7 +109,8 @@ body {
   // box-shadow: 1px 1px 1px $c__text-main;
 }
 .content-container {
-  @include padding(1);
+  @include padding-top(1);
+  @include padding-sides(1);
   @include media(tablet, general) {
     display: flex;
   }
@@ -116,11 +118,10 @@ body {
 
 
 .content-area {
-  @include padding-right(1);
-  .entry-title {
-
+  padding-right: 0;
+  @include media(tablet, general) {
+    @include padding-right(1);
   }
-
 }
 .widget-area {
   @include media(tablet, general) {
