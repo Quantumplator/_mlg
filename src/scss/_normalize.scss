@@ -63,10 +63,7 @@ dfn {
 	font-style: italic;
 }
 
-h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
-}
+h1 { } // Styles controlled in typography/_headings.scss
 
 mark {
 	background: #ff0;
