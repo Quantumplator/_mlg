@@ -36,50 +36,43 @@ body {
 
 .splash-header {
   width: 100%;
+  display: flex;
+  border-bottom: 1px solid $c__text-main;
   @include clearfix;
+  h1, img {
+    @include margin-top(1);
+  }
   img {
     float: right;
-    margin-top: 16px;
     max-width: 50%;
     @include media(tablet, general) {
       max-width: 300px;
     }
   }
   h1 {
-    @include margin-top(1);
-    @include font-size(2.4);
-    display: inline-block;
     float: left;
     max-width: 50%;
-    text-align: right;
-    @include media(iphone, general) {
-      @include font-size(1.5);
-      text-align: center;
-    }
-    @include media(tablet, general) {
-      @include font-size(3.9);      
-    }
   }
 
-  .welcome {
-    @include media(iphone, general) {
-      @include font-size(1.3);
-      text-align: left;
-    }
+  .needa {
+
+  }
+  .freshstart {
+
   }
 }
 
-.splash-header,
-.site-content {
-  box-shadow: 1px 1px 1px $c__text-main;
-}
 
 .site-content {
+  // box-shadow: 1px 1px 1px $c__text-main;
+}
+.content-container {
   @include padding(1);
   @include media(tablet, general) {
     display: flex;
   }
 }
+
 
 .content-area {
   @include padding-right(1);

@@ -48,25 +48,21 @@
 					<div><span>B</span>ANKRUPTCY<span> L</span>AWYERS</div>
 				</h2>
 			</div>
-			<div class="site-action-container">
+			<div class="site-action-container free-consultation">
 				<a class="site-action mlg-free" href="#consultation">FREE CONSULTATION</a>
+			</div>
+			<div class="site-action-container mlg-contact-info">
 				<a class="site-action mlg-phone" href="tel:8055411151">(805) 541-1151</a>
 				<a class="site-action mlg-email" href="mailto:info@marcheselawgroup.com">info@MarcheseLawGroup.com</a>
 				<a class="site-action mlg-address" href="mailto:info@marcheselawgroup.com">873 A Santa Rosa St, San Luis Obispo, CA 93401</a>
-			</div>
-			<div class="site-extra-container">
-<!-- 				<span class="site-action" href="">need a</span>
-				<span class="site-phone" href="">FRESH START?</span>
-				<span class="site-email" href=""></span> -->
 			</div>
 		</div><!-- .site-branding -->
 
 	</header><!-- #masthead -->
 
-
-	<div id="hero" class="splash-header">
-		<h1>Welcome<span class="welcome"> to Marchese Law Group</span></h1>
-		<img src="http://localhost:8888/marchese/wp-content/uploads/marcheses.png" title="Marchese Law Group" />
-	</div>
-
 	<div id="content" class="site-content">
+		<div id="hero" class="splash-header">
+			<h1><span class="needa">need a</span> <span class="freshstart">FRESH START?</span></h1>
+			<img src="http://localhost:8888/marchese/wp-content/uploads/marcheses.png" title="Marchese Law Group" />
+		</div>
+		<div id="below-splash" class="content-container">
