@@ -1,8 +1,11 @@
 .alignleft {
 	display: inline;
 	float: left;
-  @include margin-right(1.5);
+  @include margin-right(1.25);
   @include margin-bottom(1);
+  @include media(tablet, general) {
+    @include margin-right(1.25);
+  }
 }
 
 .alignright {

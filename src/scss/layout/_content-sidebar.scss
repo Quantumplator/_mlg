@@ -50,18 +50,25 @@ body {
       max-width: 41%;
     }
   }
-  h1, p {
-    float: left;
-    max-width: 59%;
+  h1,
+  p {
     @include padding-left(1);
+  }
+
+  h1 {
+    float: left;
+    width: 59%;
+    max-width: 59%;
     @include media(tablet, general) {
       max-width: 59%;
     }
   }
-
   p {
+    clear: left;
     width: 100%;
     margin-top: 0;
+    @include media(iphone, general) {
+    }
     @include media(tablet, general) {
       clear: none;
       @include font-size(1.125);
@@ -70,23 +77,21 @@ body {
 
   .needa,
   .freshstart {
-    // color: $c__blue;
-  }
-
-  .needa,
-  .freshstart {
     display: block;
-    line-height: 1;
-    @include font-size(2);
+    line-height: 1.2;
     @include media(tablet, general) {
     }
   }
   .needa {
-    font-family: 'Source Sans Pro';
     // color: $c__blue;
+    font-family: 'Source Sans Pro';
+    @include font-size(1.5);
+    @include media(iphone, general) {
+    }
   }
   .freshstart {
     // color: $c__blue;
+    @include font-size(2);
     @include media(iphoneUp, general) {
       white-space: nowrap;
       @include font-size(3);

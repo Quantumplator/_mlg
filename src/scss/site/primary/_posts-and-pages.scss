@@ -26,3 +26,9 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+.size-thumbnail {
+  @include media(iphone, general) {
+    max-width: 100px;
+  }
+}

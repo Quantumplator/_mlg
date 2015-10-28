@@ -2915,20 +2915,30 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
   margin: 0;
   font-family: "Lora", serif;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 h1 {
-  font-size: 27.2px;
-  font-size: 1.7rem;
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+@media only screen and (min-width: 800px) {
+  h1 {
+    font-size: 27.2px;
+    font-size: 1.7rem;
+  }
 }
 
 h2 {
-  font-size: 20.8px;
-  font-size: 1.3rem;
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
+  font-size: 17.6px;
+  font-size: 1.1rem;
+}
+@media only screen and (min-width: 800px) {
+  h2 {
+    font-size: 20.8px;
+    font-size: 1.3rem;
+  }
 }
 
 p {
@@ -3416,10 +3426,16 @@ a:hover, a:active {
 .alignleft {
   display: inline;
   float: left;
-  margin-right: 24px;
-  margin-right: 1.5rem;
+  margin-right: 20px;
+  margin-right: 1.25rem;
   margin-bottom: 16px;
   margin-bottom: 1rem;
+}
+@media only screen and (min-width: 800px) {
+  .alignleft {
+    margin-right: 20px;
+    margin-right: 1.25rem;
+  }
 }
 
 .alignright {
@@ -3528,18 +3544,23 @@ body {
     max-width: 41%;
   }
 }
-.splash-header h1, .splash-header p {
-  float: left;
-  max-width: 59%;
+.splash-header h1,
+.splash-header p {
   padding-left: 16px;
   padding-left: 1rem;
 }
+.splash-header h1 {
+  float: left;
+  width: 59%;
+  max-width: 59%;
+}
 @media only screen and (min-width: 800px) {
-  .splash-header h1, .splash-header p {
+  .splash-header h1 {
     max-width: 59%;
   }
 }
 .splash-header p {
+  clear: left;
   width: 100%;
   margin-top: 0;
 }
@@ -3553,14 +3574,18 @@ body {
 .splash-header .needa,
 .splash-header .freshstart {
   display: block;
-  line-height: 1;
-  font-size: 32px;
-  font-size: 2rem;
+  line-height: 1.2;
 }
 .splash-header .needa {
   font-family: 'Source Sans Pro';
+  font-size: 24px;
+  font-size: 1.5rem;
 }
-@media only screen and (min-width: 500.9px) {
+.splash-header .freshstart {
+  font-size: 32px;
+  font-size: 2rem;
+}
+@media only screen and (min-width: 568.9px) {
   .splash-header .freshstart {
     white-space: nowrap;
     font-size: 48px;
@@ -3630,6 +3655,12 @@ body {
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
+}
+
+@media only screen and (max-width: 568px) {
+  .size-thumbnail {
+    max-width: 100px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -3829,7 +3860,7 @@ body {
   font-size: 19.2px;
   font-size: 1.2rem;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 568px) {
   .site-description {
     font-size: 12.8px;
     font-size: 0.8rem;
@@ -3848,7 +3879,7 @@ body {
   font-size: 27.2px;
   font-size: 1.7rem;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 568px) {
   .site-description span {
     font-size: 19.2px;
     font-size: 1.2rem;
