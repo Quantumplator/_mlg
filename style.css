@@ -3515,7 +3515,7 @@ body {
   content: "";
   display: table;
 }
-.splash-header h1, .splash-header img {
+.splash-header div, .splash-header img {
   margin-top: 16px;
   margin-top: 1rem;
 }
@@ -3528,9 +3528,37 @@ body {
     max-width: 300px;
   }
 }
-.splash-header h1 {
+.splash-header div {
   float: left;
   max-width: 50%;
+}
+.splash-header div {
+  padding-left: 16px;
+  padding-left: 1rem;
+}
+.splash-header .needa,
+.splash-header .freshstart {
+  display: block;
+  line-height: 1;
+  color: #044389;
+  font-size: 32px;
+  font-size: 2rem;
+}
+.splash-header .needa {
+  font-family: 'Source Sans Pro';
+}
+@media only screen and (min-width: 500.9px) {
+  .splash-header .freshstart {
+    white-space: nowrap;
+    font-size: 40px;
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .splash-header .freshstart {
+    font-size: 56px;
+    font-size: 3.5rem;
+  }
 }
 
 .content-container {
@@ -3689,8 +3717,8 @@ body {
 .site-branding .mlg-email::before,
 .site-branding .mlg-address::before {
   font-family: 'Fontawesome';
-  margin-right: 16px;
-  margin-right: 1rem;
+  margin-right: 8px;
+  margin-right: 0.5rem;
 }
 .site-branding .mlg-free:hover,
 .site-branding .mlg-phone:hover,
@@ -3699,7 +3727,8 @@ body {
   text-decoration: none;
 }
 .site-branding .mlg-free {
-  color: #044389;
+  float: none;
+  color: #066cdd;
   font-family: 'Lora';
   font-size: 24px;
   font-size: 1.5rem;
@@ -3711,6 +3740,13 @@ body {
     float: left;
     clear: none;
   }
+}
+.site-branding .mlg-free:hover {
+  color: #044389;
+}
+.site-branding .mlg-phone:hover,
+.site-branding .mlg-email:hover {
+  color: #9e201d;
 }
 .site-branding .mlg-phone {
   font-size: 32px;

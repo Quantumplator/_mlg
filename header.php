@@ -62,7 +62,10 @@
 
 	<div id="content" class="site-content">
 		<div id="hero" class="splash-header">
-			<h1><span class="needa">need a</span> <span class="freshstart">FRESH START?</span></h1>
+			<div>
+				<h1><span class="needa">need a</span> <span class="freshstart">FRESH START?</span></h1>
+				<p><strong>Call Marchese Law Group today!</strong> At your free initial consultation, we will take the time to understand your financial situation, explain what types of Bankruptcy protection are available, and establish a plan to meet your individual needs.  No hassle, no hidden costs and no pressure; just honest, professional, legal advise.</p>
+			</div>
 			<img src="http://localhost:8888/marchese/wp-content/uploads/marcheses.png" title="Marchese Law Group" />
 		</div>
 		<div id="below-splash" class="content-container">

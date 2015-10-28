@@ -47,147 +47,72 @@
   .site-action-container {
     // background: white; // Testing
     text-align: center;
+  }
+  .site-action {
+    text-align: right;
+    line-height: 1;
+    @include margin-top(.5);
+    @include margin-bottom(.5);
+  }
+  .mlg-free,
+  .mlg-phone,
+  .mlg-email,
+  .mlg-address {
+    display: inline-block;
+    float: right;
+    clear: right;
+    font-weight: 700;
+    color: $c__red-dark;
+    &::before {
+      // color: $c__link;
+      font-family: 'Fontawesome';
+      @include margin-right(.5);
     }
-    .site-action {
-      text-align: right;
-      line-height: 1;
-      @include margin-top(.5);
-      @include margin-bottom(.5);
-    }
-    .mlg-free,
-    .mlg-phone,
-    .mlg-email,
-    .mlg-address {
-      display: inline-block;
-      float: right;
-      clear: right;
-      font-weight: 700;
-      color: $c__red-dark;
-      &::before {
-        // color: $c__link;
-        font-family: 'Fontawesome';
-        @include margin-right(1);
-      }
-      &:hover {
-        text-decoration: none;
-      }
-    }
-    .mlg-free {
-      color: $c__blue;
-      font-family: 'Lora';
-      @include font-size(1.5);
-      @include margin-top(1);
-      @include media(tablet, general) {
-        float: left;
-        clear: none;
-      }
-    }
-    .mlg-phone {
-      @include font-size(2);
-      &::before {
-        content: '\f095';
-        @include font-size(1.5);
-      }
-    }
-    .mlg-email {
-      @include margin-bottom(1);
-      &::before {
-        content: '\f003';
-
-      }
-    }
-    .mlg-address {
-      &::before {
-        content: '\f041';
-
-      }
+    &:hover {
+      text-decoration: none;
     }
   }
-  // .site-extra-container { // ***
-  // }
+  .mlg-free {
+    float: none;
+    color: $c__link;
+    font-family: 'Lora';
+    @include font-size(1.5);
+    @include margin-top(1);
+    @include media(tablet, general) {
+      float: left;
+      clear: none;
+      // color: $c__blue;
+    }
+    &:hover {
+      color: $c__blue;
+    }
+  }
+  .mlg-phone,
+  .mlg-email {
+    &:hover {
+      color: $c__red;
+    }
+  }
+  .mlg-phone {
+    @include font-size(2);
+    &::before {
+      content: '\f095';
+      @include font-size(1.5);
+    }
+  }
+  .mlg-email {
+    @include margin-bottom(1);
+    &::before {
+      content: '\f003';
 
-    // .site-action,
-    // .site-phone,
-    // .site-email {
-    //   display: block;
-    //   float: right;
-    //   clear: right;
-    //   font-weight: 700;
-    //   // font-family: 'Lora'; // Maybe send samples with both fonts here? Sans Pro is more understated, better. Left side is branding and panache, right side is pragmatic action.
-    //   &, &:hover {
-    //     text-decoration: none;
-    //   }
-    // }
-    // .site-action {
-    //   color: $c__blue-light;
-    //   @include media(tablet, general) {
-    //     @include margin-bottom(2);
-    //     @include font-size(2);
-    //     line-height: 1.1;
-    //     color: $c__red;
-    //     &:hover {
-    //       color: $c__red-dark;
-    //     }
-    //   }
-    // }
-    // .site-action,
-    // .site-phone {
-    //   // @include font-size(2);
-    //   // line-height: .75;
-    // }
-    // .site-phone,
-    // .site-email {
-    //   color: $c__red-dark;
-    //   &:hover {
-    //     color: $c__red-dark;
-    //   }
-    // }
-    // .site-phone {
-    //   @include font-size(2.1);
-    //   line-height: 2;
-    //   min-height: 46px;
-    //   @include media(tablet, general) {
-    //     @include font-size(2.5);
-    //     line-height: .5;
-    //     min-height: 84px;
-    //   }
-    //   &:hover {
-    //     color: $c__text-main;
-    //   }
-    //   &::before {
-    //     @include font-size(2.5);
-    //     text-shadow: 1px 1px 1px $c__red-dark;
-    //     font-family: 'Fontawesome';
-    //     display: inline-block;
-    //     padding-right: 16px;
+    }
+  }
+  .mlg-address {
+    &::before {
+      content: '\f041';
 
-    //     transform: translateY(3px);
-    //     color: $c__blue-light;
-    //     @include media(tablet, general) {
-    //       @include font-size(4);
-    //       color: $c__red;
-    //     }
-    //   }
-    // }
-    // .site-email {
-    //   line-height: .9;
-    //   @include media(tablet, general) {
-    //     position: absolute;
-    //     bottom: 0; right: 0;
-    //     line-height: 0.9;
-    //   }
-    //   &:hover {
-    //     color: $c__text-main;
-    //   }
-    //   &::before {
-    //     font-family: 'Fontawesome';
-    //     padding-right: 8px;
-
-    //   }
-    // }
-
-
-.site-top-extra-container {
+    }
+  }
 }
 
 .site-title,
