@@ -41,7 +41,7 @@
 
 		<div class="site-branding">
 			<div class="site-branding-container">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="site-logo" src="http://localhost:8888/marchese/wp-content/themes/_mlg/img/logo.png" title="Marchese Law Group" />
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="site-logo" src="http://mlg.dylanjharris.net/wp-content/themes/_mlg/img/logo.png" title="Marchese Law Group" />
 				</a><h1 class="site-title screen-reader-text"><?php bloginfo( 'name' ); ?></h1>
 				<h2 class="site-description">
 					<div><span>C</span>ENTRAL<span> C</span>OAST</div>
@@ -63,7 +63,7 @@
 	<div id="content" class="site-content">
 		<div id="hero" class="splash-header">
 			<h1><span class="needa">Need a&hellip;</span> <span class="freshstart">FRESH START?</span></h1>
-			<img src="http://localhost:8888/marchese/wp-content/uploads/marcheses.png" title="Marchese Law Group" />
+			<img src="http://mlg.dylanjharris.net/wp-content/themes/_mlg/img/marcheses.png" title="Marchese Law Group" />
 			<p><strong>Call Marchese Law Group today!</strong> At your free initial consultation, we will take the time to understand your financial situation, explain what types of Bankruptcy protection are available, and establish a plan to meet your individual needs. No hassle, no hidden costs and no pressure &mdash; <strong>just honest, professional, legal advice.</strong></p>
 		</div>
 		<div id="below-splash" class="content-container">
