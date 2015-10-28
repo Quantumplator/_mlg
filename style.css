@@ -2932,7 +2932,8 @@ h2 {
 }
 
 p {
-  margin-bottom: 1.5em;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 dfn, cite, em, i {
@@ -3128,14 +3129,14 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #066cdd;
+  color: #044389;
   text-decoration: none;
 }
 a:visited {
-  color: #066cdd;
+  color: #044389;
 }
 a:hover, a:focus, a:active {
-  color: #066cdd;
+  color: #044389;
   text-decoration: underline;
 }
 a:focus {
@@ -3507,40 +3508,52 @@ body {
 }
 
 .splash-header {
-  width: 100%;
+  position: relative;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   border-bottom: 1px solid #050517;
   content: "";
   display: table;
-}
-.splash-header div, .splash-header img {
   margin-top: 16px;
   margin-top: 1rem;
 }
 .splash-header img {
   float: right;
-  max-width: 50%;
+  max-width: 41%;
 }
 @media only screen and (min-width: 800px) {
   .splash-header img {
-    max-width: 300px;
+    max-width: 41%;
   }
 }
-.splash-header div {
+.splash-header h1, .splash-header p {
   float: left;
-  max-width: 50%;
-}
-.splash-header div {
+  max-width: 59%;
   padding-left: 16px;
   padding-left: 1rem;
+}
+@media only screen and (min-width: 800px) {
+  .splash-header h1, .splash-header p {
+    max-width: 59%;
+  }
+}
+.splash-header p {
+  width: 100%;
+  margin-top: 0;
+}
+@media only screen and (min-width: 800px) {
+  .splash-header p {
+    clear: none;
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
 }
 .splash-header .needa,
 .splash-header .freshstart {
   display: block;
   line-height: 1;
-  color: #044389;
   font-size: 32px;
   font-size: 2rem;
 }
@@ -3550,8 +3563,8 @@ body {
 @media only screen and (min-width: 500.9px) {
   .splash-header .freshstart {
     white-space: nowrap;
-    font-size: 40px;
-    font-size: 2.5rem;
+    font-size: 48px;
+    font-size: 3rem;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -3662,9 +3675,6 @@ body {
     padding-bottom: 1rem;
   }
 }
-.site-branding .site-branding-container {
-  text-align: center;
-}
 @media only screen and (min-width: 800px) {
   .site-branding .site-branding-container {
     display: inline-block;
@@ -3692,7 +3702,7 @@ body {
   }
 }
 .site-branding .site-action-container {
-  text-align: center;
+  text-align: right;
 }
 .site-branding .site-action {
   text-align: right;
@@ -3720,32 +3730,49 @@ body {
   margin-right: 8px;
   margin-right: 0.5rem;
 }
-.site-branding .mlg-free:hover,
+.site-branding .mlg-free:link, .site-branding .mlg-free:hover, .site-branding .mlg-free:active, .site-branding .mlg-free:focus, .site-branding .mlg-free:visited,
+.site-branding .mlg-phone:link,
 .site-branding .mlg-phone:hover,
+.site-branding .mlg-phone:active,
+.site-branding .mlg-phone:focus,
+.site-branding .mlg-phone:visited,
+.site-branding .mlg-email:link,
 .site-branding .mlg-email:hover,
-.site-branding .mlg-address:hover {
+.site-branding .mlg-email:active,
+.site-branding .mlg-email:focus,
+.site-branding .mlg-email:visited,
+.site-branding .mlg-address:link,
+.site-branding .mlg-address:hover,
+.site-branding .mlg-address:active,
+.site-branding .mlg-address:focus,
+.site-branding .mlg-address:visited {
   text-decoration: none;
 }
 .site-branding .mlg-free {
   float: none;
-  color: #066cdd;
+  line-height: 1;
+  color: #044389;
   font-family: 'Lora';
-  font-size: 24px;
-  font-size: 1.5rem;
   margin-top: 16px;
   margin-top: 1rem;
+  font-size: 24px;
+  font-size: 1.5rem;
 }
 @media only screen and (min-width: 800px) {
   .site-branding .mlg-free {
-    float: left;
-    clear: none;
+    position: absolute;
+    bottom: 12px;
+    margin: 0;
+    color: #551110;
+    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
-.site-branding .mlg-free:hover {
-  color: #044389;
-}
-.site-branding .mlg-phone:hover,
-.site-branding .mlg-email:hover {
+.site-branding .mlg-phone:hover, .site-branding .mlg-phone:focus, .site-branding .mlg-phone:active, .site-branding .mlg-phone:visited,
+.site-branding .mlg-email:hover,
+.site-branding .mlg-email:focus,
+.site-branding .mlg-email:active,
+.site-branding .mlg-email:visited {
   color: #9e201d;
 }
 .site-branding .mlg-phone {
@@ -3797,6 +3824,8 @@ body {
   font-weight: 400;
   line-height: 1;
   color: #9e201d;
+  margin-top: 8px;
+  margin-top: 0.5rem;
   font-size: 19.2px;
   font-size: 1.2rem;
 }
@@ -3821,8 +3850,8 @@ body {
 }
 @media only screen and (max-width: 500px) {
   .site-description span {
-    font-size: 20.8px;
-    font-size: 1.3rem;
+    font-size: 19.2px;
+    font-size: 1.2rem;
   }
 }
 @media only screen and (min-width: 800px) {

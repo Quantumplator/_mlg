@@ -35,34 +35,48 @@ body {
 }
 
 .splash-header {
-  width: 100%;
+  position: relative;
   display: flex;
+  width: 100%;
   border-bottom: 1px solid $c__text-main;
   @include clearfix;
-  div, img {
-    @include margin-top(1);
-  }
+  @include margin-top(1);
   img {
     float: right;
-    max-width: 50%;
+    max-width: 41%;
+    @include media(iphoneUp, general) {
+    }
     @include media(tablet, general) {
-      max-width: 300px;
+      max-width: 41%;
     }
   }
-  div {
+  h1, p {
     float: left;
-    max-width: 50%;
+    max-width: 59%;
+    @include padding-left(1);
+    @include media(tablet, general) {
+      max-width: 59%;
+    }
   }
 
-  div {
-    @include padding-left(1);
+  p {
+    width: 100%;
+    margin-top: 0;
+    @include media(tablet, general) {
+      clear: none;
+      @include font-size(1.125);
+    }
+  }
+
+  .needa,
+  .freshstart {
+    // color: $c__blue;
   }
 
   .needa,
   .freshstart {
     display: block;
     line-height: 1;
-    color: $c__blue;
     @include font-size(2);
     @include media(tablet, general) {
     }
@@ -75,7 +89,7 @@ body {
     // color: $c__blue;
     @include media(iphoneUp, general) {
       white-space: nowrap;
-      @include font-size(2.5);
+      @include font-size(3);
     }
     @include media(tablet, general) {
       // color: $c__blue;

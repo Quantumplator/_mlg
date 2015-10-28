@@ -12,7 +12,6 @@
     @include padding-bottom(1);
   }
   .site-branding-container {
-    text-align: center;
     @include media(tablet, general) {
       display: inline-block;
       text-align: left;
@@ -46,7 +45,7 @@
 
   .site-action-container {
     // background: white; // Testing
-    text-align: center;
+    text-align: right;
   }
   .site-action {
     text-align: right;
@@ -68,28 +67,31 @@
       font-family: 'Fontawesome';
       @include margin-right(.5);
     }
-    &:hover {
+    &:link, &:hover, &:active, &:focus, &:visited {
       text-decoration: none;
     }
   }
   .mlg-free {
     float: none;
-    color: $c__link;
+    line-height: 1;
+    color: $c__blue;
     font-family: 'Lora';
-    @include font-size(1.5);
     @include margin-top(1);
+    @include font-size(1.5);
     @include media(tablet, general) {
-      float: left;
-      clear: none;
-      // color: $c__blue;
+      position: absolute;
+      bottom: 12px;
+      margin: 0;
+      color: $c__red-dark;
+      @include font-size(2.5);
     }
     &:hover {
-      color: $c__blue;
+      // color: $c__blue;
     }
   }
   .mlg-phone,
   .mlg-email {
-    &:hover {
+    &:hover, &:focus, &:active, &:visited {
       color: $c__red;
     }
   }
@@ -141,6 +143,7 @@
   font-weight: 400;
   line-height: 1;
   color: $c__red;
+  @include margin-top(.5);
   @include font-size(1.2); // Adjust these and those below for a two level effect
   @include media(iphone, general) {
     @include font-size(.8);
@@ -154,7 +157,7 @@
   span { // Adjust these and those above for a two level effect
     @include font-size(1.7); 
     @include media(iphone, general) {
-      @include font-size(1.3);
+      @include font-size(1.2);
     }
     @include media(tablet, general) {
       @include font-size(2);
