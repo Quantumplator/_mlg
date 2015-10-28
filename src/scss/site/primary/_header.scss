@@ -1,9 +1,6 @@
 .site-header {
   background: $bg1;
   position: relative;
-  * {
-    background: transparent;
-  }
 }
 
 .site-branding {
@@ -15,8 +12,10 @@
     @include padding-bottom(1);
   }
   .site-branding-container {
+    text-align: center;
     @include media(tablet, general) {
-      display: inline-block;          
+      display: inline-block;
+      text-align: left;
     }
   }
   .site-branding-container {
@@ -46,34 +45,52 @@
   }
 
   .site-action-container {
-    background: white; // Testing
+    // background: white; // Testing
+    text-align: center;
     }
     .site-action {
-
+      text-align: right;
+      line-height: 1;
+      @include margin-top(.5);
+      @include margin-bottom(.5);
     }
     .mlg-free,
     .mlg-phone,
     .mlg-email,
     .mlg-address {
-      display: block;
+      display: inline-block;
       float: right;
       clear: right;
-
+      font-weight: 700;
+      color: $c__red-dark;
       &::before {
+        // color: $c__link;
         font-family: 'Fontawesome';
         @include margin-right(1);
       }
+      &:hover {
+        text-decoration: none;
+      }
     }
     .mlg-free {
-      float: left;
-
+      color: $c__blue;
+      font-family: 'Lora';
+      @include font-size(1.5);
+      @include margin-top(1);
+      @include media(tablet, general) {
+        float: left;
+        clear: none;
+      }
     }
     .mlg-phone {
+      @include font-size(2);
       &::before {
         content: '\f095';
+        @include font-size(1.5);
       }
     }
     .mlg-email {
+      @include margin-bottom(1);
       &::before {
         content: '\f003';
 

@@ -3617,9 +3617,6 @@ body {
   background: #e3ba80;
   position: relative;
 }
-.site-header * {
-  background: transparent;
-}
 
 .site-branding {
   clear: left;
@@ -3637,9 +3634,13 @@ body {
     padding-bottom: 1rem;
   }
 }
+.site-branding .site-branding-container {
+  text-align: center;
+}
 @media only screen and (min-width: 800px) {
   .site-branding .site-branding-container {
     display: inline-block;
+    text-align: left;
   }
 }
 .site-branding .site-branding-container {
@@ -3663,15 +3664,25 @@ body {
   }
 }
 .site-branding .site-action-container {
-  background: white;
+  text-align: center;
+}
+.site-branding .site-action {
+  text-align: right;
+  line-height: 1;
+  margin-top: 8px;
+  margin-top: 0.5rem;
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 .site-branding .mlg-free,
 .site-branding .mlg-phone,
 .site-branding .mlg-email,
 .site-branding .mlg-address {
-  display: block;
+  display: inline-block;
   float: right;
   clear: right;
+  font-weight: 700;
+  color: #551110;
 }
 .site-branding .mlg-free::before,
 .site-branding .mlg-phone::before,
@@ -3681,11 +3692,38 @@ body {
   margin-right: 16px;
   margin-right: 1rem;
 }
+.site-branding .mlg-free:hover,
+.site-branding .mlg-phone:hover,
+.site-branding .mlg-email:hover,
+.site-branding .mlg-address:hover {
+  text-decoration: none;
+}
 .site-branding .mlg-free {
-  float: left;
+  color: #044389;
+  font-family: 'Lora';
+  font-size: 24px;
+  font-size: 1.5rem;
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+@media only screen and (min-width: 800px) {
+  .site-branding .mlg-free {
+    float: left;
+    clear: none;
+  }
+}
+.site-branding .mlg-phone {
+  font-size: 32px;
+  font-size: 2rem;
 }
 .site-branding .mlg-phone::before {
   content: '\f095';
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+.site-branding .mlg-email {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .site-branding .mlg-email::before {
   content: '\f003';
