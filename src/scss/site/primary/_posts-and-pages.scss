@@ -40,8 +40,7 @@
 }
 
 .tablet-up {
-  display: none;
-  @include media(tablet, general) {
-    display: inline;
+  @include media(mobile, general) {
+    display: none;
   }
 }

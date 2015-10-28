@@ -193,30 +193,6 @@
 	}
 }
 
-/* Social menu. */
-// .menu-social {
-// 	a::before {
-// 		@include font-size(1);
-// 		line-height: 1.625;
-// 		display: inline-block;
-// 		vertical-align: top;
-// 		font-family: 'Fontawesome';
-// 		color: $c__link;
-// 		-webkit-font-smoothing: antialiased;
-// 		content: '\f0c0';
-// 	}
-// 	a[href*="facebook.com"]::before { content: '\f09a'; }
-// 	a[href*="twitter.com"]::before { content: '\f099'; }
-// 	a[href*="linkedin.com"]::before { content: '\f0e1'; }
-// 	a[href*="feedburner.com"]::before { content: '\f09e'; }
-// 	ul, li {
-// 		list-style: none;
-// 		display: inline-block;
-// 		float: right;
-// 	}
-// }
-
-
 .comment-navigation,
 .posts-navigation,
 .post-navigation {

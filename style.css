@@ -2682,6 +2682,23 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   text-shadow: 1px 1px 1px #f5e8d4;
 }
 
+.sixteen-nine {
+  position: relative;
+}
+.sixteen-nine:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 56.25%;
+}
+.sixteen-nine > .ratio-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -3024,7 +3041,7 @@ hr {
 }
 
 ul, ol {
-  margin: 0 0 1.5em 3em;
+  margin: 0;
 }
 
 ul {
@@ -3366,7 +3383,6 @@ a:hover, a:active {
   width: 32px;
 }
 
-/* Social menu. */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -3689,12 +3705,9 @@ body {
   }
 }
 
-.tablet-up {
-  display: none;
-}
-@media only screen and (min-width: 800px) {
+@media only screen and (max-width: 799.9px) {
   .tablet-up {
-    display: inline;
+    display: none;
   }
 }
 
@@ -3930,7 +3943,100 @@ body {
 ## Footer
 --------------------------------------------------------------*/
 .site-footer {
+  border-top: 1px solid #050517;
   background: #e3ba80;
+}
+
+.site-info {
+  background: #f5e8d4;
+  content: "";
+  display: table;
+}
+
+.site-disclaimer,
+.site-address {
+  padding: 16px;
+  padding: 1rem;
+}
+
+.site-disclaimer,
+.site-copyright {
+  font-size: 11.2px;
+  font-size: 0.7rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .site-disclaimer {
+    float: left;
+    width: 600px;
+  }
+}
+
+.site-address {
+  font-size: 12.8px;
+  font-size: 0.8rem;
+}
+.site-address ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+@media only screen and (min-width: 800px) {
+  .site-address ul {
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .site-address {
+    float: right;
+    width: 200px;
+    padding-left: 0;
+  }
+}
+
+.site-copyright {
+  background: #e3ba80;
+}
+
+/* Social menu. */
+.menu-social a::before {
+  line-height: 1.625;
+  display: inline-block;
+  vertical-align: top;
+  font-family: 'Fontawesome';
+  color: #044389;
+  -webkit-font-smoothing: antialiased;
+  content: '\f0c0';
+  font-size: 16px;
+  font-size: 1rem;
+  padding-left: 8px;
+  padding-left: 0.5rem;
+  padding-right: 8px;
+  padding-right: 0.5rem;
+}
+@media only screen and (min-width: 800px) {
+  .menu-social a::before {
+    padding-right: 0px;
+    padding-right: 0rem;
+    padding-left: 16px;
+    padding-left: 1rem;
+  }
+}
+.menu-social a[href*="facebook.com"]::before {
+  content: '\f09a';
+}
+.menu-social a[href*="twitter.com"]::before {
+  content: '\f099';
+}
+.menu-social a[href*="linkedin.com"]::before {
+  content: '\f0e1';
+}
+.menu-social a[href*="feedburner.com"]::before {
+  content: '\f09e';
+}
+.menu-social ul, .menu-social li {
+  list-style: none;
+  display: inline-block;
 }
 
 /*--------------------------------------------------------------
@@ -4012,4 +4118,87 @@ object {
 
 .gallery-caption {
   display: block;
+}
+
+/*--------------------------------------------------------------
+# Animations
+--------------------------------------------------------------*/
+.cssSlider {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.sliderContent {
+  width: 900px;
+  height: 200px;
+  overflow: hidden;
+  /* animation duration: 16s : 5x ~3s display image + 5x ~0.2s slide */
+  -webkit-animation: slide 20s infinite;
+          animation: slide 20s infinite;
+}
+.sliderContent:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.sliderContent div {
+  width: 300px;
+  height: 200px;
+  float: left;
+  font-style: italic;
+  padding-left: 16px;
+  padding-left: 1rem;
+  padding-right: 16px;
+  padding-right: 1rem;
+  font-size: 14.4px;
+  font-size: 0.9rem;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    margin-left: 0px;
+  }
+  30% {
+    margin-left: 0px;
+  }
+  35% {
+    margin-left: -300px;
+  }
+  65% {
+    margin-left: -300px;
+  }
+  70% {
+    margin-left: -600px;
+  }
+  95% {
+    margin-left: -600px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0px;
+  }
+  30% {
+    margin-left: 0px;
+  }
+  35% {
+    margin-left: -300px;
+  }
+  65% {
+    margin-left: -300px;
+  }
+  70% {
+    margin-left: -600px;
+  }
+  95% {
+    margin-left: -600px;
+  }
+  100% {
+    margin-left: 0px;
+  }
 }

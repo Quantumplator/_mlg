@@ -1,0 +1,36 @@
+.cssSlider {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.sliderContent {
+  width : 900px;
+  height: 200px;
+  overflow: hidden;
+  /* animation duration: 16s : 5x ~3s display image + 5x ~0.2s slide */
+  animation: slide 20s infinite;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+.sliderContent div {
+  width: 300px;
+  height: 200px;
+  float: left;
+  font-style: italic;
+  @include padding-sides(1);
+  @include font-size(.9);
+}
+
+@keyframes slide{
+  // 1 second = 5%
+  0%{margin-left: 0px;}
+  30%{margin-left: 0px;}
+  35%{margin-left: -300px;}
+  65%{margin-left: -300px;}
+  70%{margin-left: -600px;}
+  95%{margin-left: -600px;}
+  100%{margin-left: 0px;}
+}

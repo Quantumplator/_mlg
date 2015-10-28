@@ -1,3 +1,79 @@
 .site-footer {
+  border-top: 1px solid $c__text-main;
   background: $bg1;
+}
+
+.site-info {
+  background: $bg2;
+  @include clearfix;
+}
+
+.site-disclaimer,
+.site-address,
+.site-copyright {
+
+}
+
+.site-disclaimer,
+.site-address {
+  @include padding(1);
+}
+.site-disclaimer,
+.site-copyright {
+  @include font-size(.7);  
+}
+
+.site-disclaimer {
+  @include media(tablet, general) {
+    float: left;
+    width: 600px;
+  }
+}
+
+.site-address {
+  @include font-size(.8);
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    @include media(tablet, general) {
+      text-align: right;
+    }
+  }
+  @include media(tablet, general) {
+    float: right;
+    width: 200px;
+    padding-left: 0;
+  }
+}
+
+.site-copyright {
+  background: $bg1;
+}
+
+/* Social menu. */
+.menu-social {
+  a::before {
+    line-height: 1.625;
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Fontawesome';
+    color: $c__link;
+    -webkit-font-smoothing: antialiased;
+    content: '\f0c0';
+    @include font-size(1);
+    @include padding-sides(0.5);
+    @include media(tablet, general) {
+      @include padding-right(0);
+      @include padding-left(1);
+    }
+  }
+  a[href*="facebook.com"]::before { content: '\f09a'; }
+  a[href*="twitter.com"]::before { content: '\f099'; }
+  a[href*="linkedin.com"]::before { content: '\f0e1'; }
+  a[href*="feedburner.com"]::before { content: '\f09e'; }
+  ul, li {
+    list-style: none;
+    display: inline-block;
+  }
 }
