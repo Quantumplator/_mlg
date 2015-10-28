@@ -3647,6 +3647,8 @@ body {
 }
 @media only screen and (min-width: 800px) {
   .content-area {
+    float: left;
+    max-width: 468px;
     padding-right: 16px;
     padding-right: 1rem;
   }
@@ -3654,6 +3656,8 @@ body {
 
 @media only screen and (min-width: 800px) {
   .widget-area {
+    float: right;
+    max-width: 300px;
     min-width: 300px;
   }
 }

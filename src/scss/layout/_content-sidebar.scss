@@ -120,11 +120,15 @@ body {
 .content-area {
   padding-right: 0;
   @include media(tablet, general) {
+    float: left;
+    max-width: 468px;
     @include padding-right(1);
   }
 }
 .widget-area {
   @include media(tablet, general) {
+    float: right;
+    max-width: 300px;
     min-width: 300px;
   }
   strong {
