@@ -3354,7 +3354,6 @@ a:hover, a:active {
   padding-top: 1rem;
   padding-bottom: 16px;
   padding-bottom: 1rem;
-  display: none;
 }
 @media only screen and (min-width: 800px) {
   .search-form input {
