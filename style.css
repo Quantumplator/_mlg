@@ -3362,10 +3362,10 @@ a:hover, a:active {
     border-radius: 3px;
     line-height: 1.5;
     overflow: visible;
-    padding-top: 4.8px;
-    padding-top: 0.3rem;
-    padding-bottom: 3.2px;
-    padding-bottom: 0.2rem;
+    padding-top: 4px;
+    padding-top: 0.25rem;
+    padding-bottom: 4px;
+    padding-bottom: 0.25rem;
   }
 }
 .search-form .search-submit {
