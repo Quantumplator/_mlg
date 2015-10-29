@@ -13,14 +13,14 @@
   }
   .site-branding-container {
     @include media(tablet, general) {
-      display: inline-block;
+      display: block; // Testing
       text-align: left;
     }
   }
   .site-branding-container {
     margin: 0 auto;
     @include media(tablet, general) {
-      margin: 0;
+      // margin: 0;
     }
   }
 
