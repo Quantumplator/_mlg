@@ -171,10 +171,10 @@
 			width: 300px;
 			float: right;
 			border-radius: 3px;
-			line-height: 1.8;
+			line-height: 1.5;
 			// overflow: visible;
-			@include padding-top(.14);
-			@include padding-bottom(.14);
+			@include padding-top(.25);
+			@include padding-bottom(.25);
 		}
 		// display: none;
 	}

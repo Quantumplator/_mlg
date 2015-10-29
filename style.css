@@ -3360,11 +3360,11 @@ a:hover, a:active {
     width: 300px;
     float: right;
     border-radius: 3px;
-    line-height: 1.8;
-    padding-top: 2.24px;
-    padding-top: 0.14rem;
-    padding-bottom: 2.24px;
-    padding-bottom: 0.14rem;
+    line-height: 1.5;
+    padding-top: 4px;
+    padding-top: 0.25rem;
+    padding-bottom: 4px;
+    padding-bottom: 0.25rem;
   }
 }
 .search-form .search-submit {
