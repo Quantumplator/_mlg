@@ -172,12 +172,13 @@
 			float: right;
 			border-radius: 3px;
 			line-height: 1.5;
-			overflow: visible;
+			// overflow: visible;
 			@include padding-top(.25);
 			@include padding-bottom(.25);
 			// padding-top: 0;
 			// padding-bottom: 0;
 		}
+		display: none;
 	}
 	.search-submit {
 		display: none;
