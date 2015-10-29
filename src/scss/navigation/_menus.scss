@@ -171,8 +171,9 @@
 			width: 300px;
 			float: right;
 			border-radius: 3px;
-			@include padding-top(0);
-			@include padding-bottom(0);
+			line-height: 1.5;
+			@include padding-top(.3);
+			@include padding-bottom(.2);
 		}
 	}
 	.search-submit {
